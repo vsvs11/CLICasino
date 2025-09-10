@@ -69,7 +69,7 @@ def sapper():
 				over_l = True
 				clear_l()
 				menu()
-				return
+				main()
 			print(f"you cash - ${cash}")
 			bet = int(input("Your bet - $")) 
 			if bet < 10:
@@ -137,7 +137,7 @@ def sapper():
 				print("Enter 'exit' or Ctrl+C to claim your prize")
 				cell = input(">")
 				if cell == "exit":
-					cash = bet * main_x
+					cash = cash + bet * main_x
 					save_cash(cash)
 					sapper()
 				cell = int(cell)

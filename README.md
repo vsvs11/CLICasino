@@ -76,7 +76,7 @@ The installer will:
 ## ❓ Support
 
 - GitHub Issues: [vsvs11/CLICasino](https://github.com/vsvs11/CLICasino/issues)
-- Email: your-email@example.com
+- Email: vs9589394@gmail.com
 
 ## 📝 License
 

@@ -12,6 +12,9 @@ def load_cash():
     try:
         with open('casino_money.txt', 'r') as file:
             return float(file.read().strip())
+		global cash	
+		if cash < 100:
+			cash = 1000
     except (FileNotFoundError, ValueError):
         # Если файла нет или он поврежден, вернем стартовую сумму
         return 1000.0  # Стартовая сумма
@@ -63,6 +66,7 @@ def sapper():
 		try:
 			global over_l
 			if over_l == False:
+				over_l == True
 				clear_l()
 				menu()
 				return

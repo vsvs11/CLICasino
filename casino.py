@@ -8,11 +8,10 @@ list_game = ["crash", "sapper"]
 def save_cash(amount):
     with open('casino_money.txt', 'w') as file:
         file.write(str(amount))
-def load_cash():
+def load_cash(cash):
     try:
         with open('casino_money.txt', 'r') as file:
             return float(file.read().strip())
-		global cash	
 		if cash < 100:
 			cash = 1000
     except (FileNotFoundError, ValueError):

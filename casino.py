@@ -66,7 +66,7 @@ def sapper():
 		try:
 			global over_l
 			if over_l == False:
-				over_l == True
+				over_l = True
 				clear_l()
 				menu()
 				return

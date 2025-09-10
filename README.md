@@ -4,8 +4,8 @@
 
 ### One-command installation (Linux/Termux):
 ```bash
-curl -sSL https://raw.githubusercontent.com/vsvs11/CLICasino/main/install.sh | bash
-📋 Manual Installation
+curl -sSL https://raw.githubusercontent.com/vsvs11/CLICasino/main/install.sh | bash```
+### 📋 Manual Installation
 Step 1: Download and make executable
 bash
 wget https://raw.githubusercontent.com/vsvs11/CLICasino/main/install.sh
@@ -13,7 +13,7 @@ chmod +x install.sh
 Step 2: Run installer
 bash
 ./install.sh
-🎮 After Installation
+###🎮 After Installation
 Run the game with:
 
 bash
@@ -55,4 +55,4 @@ Choose your game and start playing!
 ❓ Support
 Visit GitHub: https://github.com/vsvs11/CLICasino
 
-Enjoy your terminal casino experience! 🎰
+Enjoy your terminal casino experience! 

@@ -1,6 +1,4 @@
-**Вот полный файл `README.md` для GitHub:**
 
-```markdown
 # 🎰 CLICasino - Terminal Casino Game
 
 A full-featured casino game that runs directly in your terminal! Play Crash and Sapper games with persistent money system.
@@ -86,9 +84,3 @@ MIT License - feel free to modify and distribute!
 
 ---
 
-**Enjoy your terminal casino experience!** 🎰
-
-> ⚠️ Remember: This is just a game. Play responsibly!
-```
-
-**Сохрани это как `README.md` в твоём репозитории GitHub.** Этот файл будет автоматически отображаться на главной странице репозитория и даст пользователям всю необходимую информацию об установке и использовании игры.

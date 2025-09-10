@@ -64,12 +64,7 @@ def sapper():
 	global cash
 	while True:
 		try:
-			global over_l
-			if over_l == False:
-				over_l = True
-				clear_l()
-				menu()
-				main()
+			
 			print(f"you cash - ${cash}")
 			bet = int(input("Your bet - $")) 
 			if bet < 10:
@@ -159,8 +154,9 @@ def sapper():
 					if pp == "yes":
 						sapper()
 					else:
-						over_l = False
-						break
+						clear_l()
+						menu()
+						return
 			except ValueError:
 				print("invalid input!")
 			except IndexError:

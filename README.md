@@ -1,58 +1,94 @@
-# 🎰 CLICasino - Terminal-Based Casino Game
+**Вот полный файл `README.md` для GitHub:**
+
+```markdown
+# 🎰 CLICasino - Terminal Casino Game
+
+A full-featured casino game that runs directly in your terminal! Play Crash and Sapper games with persistent money system.
 
 ## ⚡ Quick Install
 
-### One-command installation (Linux/Termux):
+### One-command installation:
 ```bash
 curl -sSL https://raw.githubusercontent.com/vsvs11/CLICasino/main/install.sh | bash
-📋 Manual Installation
-Step 1: Download and make executable
-bash
+```
+
+### Manual installation:
+```bash
 wget https://raw.githubusercontent.com/vsvs11/CLICasino/main/install.sh
 chmod +x install.sh
-Step 2: Run installer
-bash
 ./install.sh
-###🎮 After Installation
-Run the game with:
+```
 
-bash
+## 🎮 Features
+
+- **🎲 Crash Game** - Bet on multiplying coefficients
+- **💣 Sapper** - Classic minefield game  
+- **💰 Money System** - Persistent balance that saves between sessions
+- **🎯 CLI Interface** - Full terminal support, no GUI required
+- **💾 Auto-Save** - Your progress is automatically saved
+
+## 🚀 Usage
+
+After installation, run:
+```bash
 casino
+```
 or
-
-bash
+```bash
 clicasino
-🎯 Features
-Crash Game - Multiplier betting game
+```
 
-Sapper - Minefield adventure
+## 🎯 Games Available
 
-Money System - Persistent balance
+### Crash
+- Place your bet before the crash
+- Cash out at the right moment
+- Multiply your money
 
-CLI Interface - Full terminal support
+### Sapper  
+- Choose field size: 3x3, 3x4, or 4x4
+- Find mines without triggering them
+- Win up to 2x your bet
 
-📁 Project Structure
-text
-~/CLICasino/
-├── casino.py          # Main game file
-├── money.dat          # Balance data
-├── install.sh         # Installer script
-└── README.md          # Documentation
-🔧 Requirements
-Python 3.6+
+## 📁 Project Structure
 
-Linux or Termux
+```
+CLICasino/
+├── casino.py          # Main game executable
+├── money.dat          # Player balance data
+├── install.sh         # Installation script
+├── uninstall.sh       # Removal script
+└── README.md          # This file
+```
 
-Internet connection (for installation)
+## 🔧 Requirements
 
-🚀 Quick Start
-Run the one-command installer
+- Python 3.6+
+- Linux or Termux
+- Internet connection (for installation only)
 
-Type casino in terminal
+## 🛠️ Installation Details
 
-Choose your game and start playing!
+The installer will:
+1. Create ~/CLICasino directory
+2. Download all necessary files
+3. Set up terminal aliases
+4. Make scripts executable
 
-❓ Support
-Visit GitHub: https://github.com/vsvs11/CLICasino
+## ❓ Support
 
-Enjoy your terminal casino experience! 
+- GitHub Issues: [vsvs11/CLICasino](https://github.com/vsvs11/CLICasino/issues)
+- Email: your-email@example.com
+
+## 📝 License
+
+MIT License - feel free to modify and distribute!
+
+---
+
+**Enjoy your terminal casino experience!** 🎰
+
+> ⚠️ Remember: This is just a game. Play responsibly!
+```
+
+**Сохрани это как `README.md` в твоём репозитории GitHub.** Этот файл будет автоматически отображаться на главной странице репозитория и даст пользователям всю необходимую информацию об установке и использовании игры.

@@ -4,8 +4,8 @@
 
 ### One-command installation (Linux/Termux):
 ```bash
-curl -sSL https://raw.githubusercontent.com/vsvs11/CLICasino/main/install.sh | bash```
-### 📋 Manual Installation
+curl -sSL https://raw.githubusercontent.com/vsvs11/CLICasino/main/install.sh | bash
+📋 Manual Installation
 Step 1: Download and make executable
 bash
 wget https://raw.githubusercontent.com/vsvs11/CLICasino/main/install.sh

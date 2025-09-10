@@ -19,7 +19,7 @@ chmod +x install.sh
 
 ## 🎮 Features
 
-- **🎲 Crash Game** - Bet on multiplying coefficients
+- **🎲 Crash Game** - Bet on multiplying coefficients(in development)
 - **💣 Sapper** - Classic minefield game  
 - **💰 Money System** - Persistent balance that saves between sessions
 - **🎯 CLI Interface** - Full terminal support, no GUI required
@@ -53,9 +53,8 @@ clicasino
 ```
 CLICasino/
 ├── casino.py          # Main game executable
-├── money.dat          # Player balance data
-├── install.sh         # Installation script
-├── uninstall.sh       # Removal script
+├── casino_money.txt   # Player balance data
+├── install.sh         # Installation script      
 └── README.md          # This file
 ```
 

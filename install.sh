@@ -1,21 +1,38 @@
 #!/bin/bash
 
-# Находим casino.py
-CASINO_PATH=$(find $HOME -name "casino.py" -type f | head -n 1)
+echo "Installing CLICasino..."
+echo "Downloading all files..."
 
-if [ -z "$CASINO_PATH" ]; then
-    echo "Error: casino.py not found!"
-    exit 1
+# Создаем папку
+mkdir -p ~/CLICasino
+cd ~/CLICasino
+
+# Скачиваем ВСЕ файлы из репозитория
+echo "Downloading casino.py..."
+curl -sSL https://raw.githubusercontent.com/vsvs11/CLICasino/main/casino.py -o casino.py
+
+echo "Downloading casino_money.txt..."
+curl -sSL https://raw.githubusercontent.com/vsvs11/CLICasino/main/casino_money.txt -o casino_money.txt 2>/dev/null || touch casino_money.txt
+
+echo "Downloading LICENSE..."
+curl -sSL https://raw.githubusercontent.com/vsvs11/CLICasino/main/LICENSE -o LICENSE 2>/dev/null || echo "LICENSE not found, skipping"
+
+echo "Downloading README.md..."
+curl -sSL https://raw.githubusercontent.com/vsvs11/CLICasino/main/README.md -o README.md 2>/dev/null || echo "README not found, skipping"
+
+# Даем права на выполнение
+chmod +x casino.py
+
+# Создаем алиас для запуска
+if [[ ! -f ~/.bashrc ]]; then
+    touch ~/.bashrc
 fi
 
-echo "Found casino.py at: $CASINO_PATH"
+if ! grep -q "alias casino=" ~/.bashrc; then
+    echo "alias casino='python3 ~/CLICasino/casino.py'" >> ~/.bashrc
+    echo "Alias added to .bashrc"
+fi
 
-# Добавляем alias в .bashrc
-echo "alias casino='python3 \"$CASINO_PATH\"'" >> ~/.bashrc
-echo "alias clicasino='python3 \"$CASINO_PATH\"'" >> ~/.bashrc
-
-# Обновляем настройки
-source ~/.bashrc
-
-echo "Aliases added successfully!"
-echo "Now you can use: casino or clicasino"
+echo "Installation complete!"
+echo "Type 'casino' to start the game"
+echo "Restart terminal or run: source ~/.bashrc"
